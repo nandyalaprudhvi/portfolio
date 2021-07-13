@@ -1,0 +1,483 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin-right: 0;
+    margin-bottom: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align:middle;
+    scroll-behavior:initial;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+html,body {
+    line-height: 1;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: #fff;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+.banner-text {
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+}
+.banner-text ul {
+	height: 50px;
+	float: right;
+}
+.banner-text ul li {
+	display: inline-block;
+	padding: 40px 15px;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 20px;
+}
+.banner-text ul li:hover {
+	cursor: pointer;
+}
+.banner-text h2 {
+	text-align: center;
+	color: #fff;
+	font-size: 50px;
+	margin-top: 20%;
+}
+.animation-area {
+    background: linear-gradient(to left, #9046af, #bd3e35); 
+	width: 100%;
+	height: 585vh;
+    margin-right: 0%;
+}
+.box-area {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.box-area li {
+	position: absolute;
+	display: block;
+	list-style: none;
+	width: 25px;
+	height: 25px;
+	background: rgba(255, 255, 255, 0.2);
+	animation: animate 20s linear infinite;
+	bottom: -150px;
+}
+.box-area li:nth-child(1) {
+	left: 86%;
+	width: 80px;
+	height: 80px;
+	animation-delay: 0s;
+}
+.box-area li:nth-child(2) {
+	left: 12%;
+	width: 30px;
+	height: 30px;
+	animation-delay: 1.5s;
+	animation-duration: 10s;
+}
+.box-area li:nth-child(3) {
+	left: 70%;
+	width: 100px;
+	height: 100px;
+	animation-delay: 5.5s;
+}
+.box-area li:nth-child(4) {
+	left: 42%;
+	width: 150px;
+	height: 150px;
+	animation-delay: 0s;
+	animation-duration: 15s;
+}
+.box-area li:nth-child(5) {
+	left: 65%;
+	width: 40px;
+	height: 40px;
+	animation-delay: 0s;
+}
+.box-area li:nth-child(6) {
+	left: 15%;
+	width: 110px;
+	height: 110px;
+	animation-delay: 3.5s;
+}
+@keyframes animate {
+	0% {
+		transform: translateY(0) rotate(0deg);
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(-800px) rotate(360deg);
+		opacity: 0;
+	}
+}
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* 
+#particles-js{
+  position: fixed;
+  width: 100%;
+  height: 100%;  
+  z-index: 10;
+} */
+
+ /*HEADER STYLE */
+/* 
+header{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    text-align: center;
+    padding:25px 0;
+
+}
+
+header ul li a{
+    color:#ffffff;  
+    text-transform: uppercase;
+    text-decoration: none;
+    margin:0 40px;
+
+}
+
+header ul li a:hover{
+   
+    font-weight: 400;
+    font-size: 20px;
+}   */
+
+/* HEADER STICKY STYLE */
+/* 
+.fixed{
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: #000000;
+    z-index: 999;
+
+
+}  */
+ 
+/* section{
+    padding:60px 0;
+    height: 100%;
+    position: relative;
+}  */
+
+/* HOME STYLE*/
+.home{
+    color:#ffffff;
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20%;
+   
+}
+
+
+.home h1{
+    font-size: 68px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 0 15px 20px #000000b0 ;
+    margin-bottom: 0;
+} 
+
+
+/* 
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0073e6, 0 0 40px #0073e6, 0 0 50px #0073e6, 0 0 60px #0073e6, 0 0 70px #0073e6;
+  }
+} */
+
+
+ .home h5{
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 15px 0 10px;
+    display: inline-block;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-radius: 2px;
+   
+}  
+
+/* SECTION TITLE STYLE */
+
+.section-title{
+    text-align:center;
+   
+}
+.section-title h2{
+    display: inline-block;
+    font-size: 28px;
+    border-bottom: 1px solid; /*Underline under titles of each section of website*/
+    text-transform: uppercase;
+    padding: 20px 0 10px;
+}
+
+/* About Section Style */
+
+.about-info{
+    width: 60%;
+    margin-left: 20% ;
+    padding: 50px 0;
+    text-align: center;
+        z-index: 99;
+
+}
+
+.about-info p{
+    line-height: 28px;
+    font-size: 18px;
+
+}
+.about-info .downloadbtn{
+    display: inline-block;
+    padding: 15px 35px;
+    background-color:white ;
+    border: 1px solid #ffffff30;
+    border-radius: 50px;
+    color: #000000;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 35px;
+    position: relative;
+    z-index: 999;
+    transition: 0.5s ease-in-out;
+}
+
+.about-info .downloadbtn:hover{
+    transform: scale(1.1);
+    border: 2px solid white;
+}
+.timeline{
+    margin-top: 50px;
+    display: flex;
+
+}
+
+.timeline .col{
+    margin: 5px;
+    padding: 25px 5px;
+    border: 3px solid #ffffff30;
+    float: left;
+    transition: 0.3s ease-in-out;
+}
+
+.timeline .col:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.timeline h6{
+    margin: 15px 0 0;
+    font-size: 14px ;
+    line-height: 24px;
+}
+
+/*Skills section */
+
+.skills {
+    width: 70%; 
+    margin-left: 15%;
+    text-align: center;
+      z-index: 50;
+
+}
+
+.skills .skills-info{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0;
+}
+
+.skills .col{
+    width: 80%;
+    text-align:center;   
+    margin-top: 10px;
+    margin-bottom: 0%;
+}
+
+.skills .col img{
+    width: 70px ;
+    margin-left: 0%;
+}
+
+.skills .col h3{
+    margin-top: 10px;
+    font-size: 28px;
+    margin-bottom: 15px;
+
+}
+
+.skills .col p{
+    line-height: 28px;
+    margin-bottom: 10%;
+}
+
+.skills .header{
+    justify-content: center;
+   
+}
+.skills .header h2{
+    display: inline-block;
+    font-size: 28px;
+    border-bottom: 1px solid; /*Underline under titles of each section of website*/
+    text-transform: uppercase;
+    padding: 10px 0 10px;
+}
+
+/* Awards&projects section */
+.Achivements{
+    margin-top: 50px;
+}
+
+.Awards {
+    margin-top: 0%;
+    margin-bottom: 10%;
+}
+.Awards ul li{
+    text-transform: none;
+    font-weight: 3;
+    font-size: 15px;
+    width: 100%;
+    padding: 0px;
+    margin: 5px;
+}
+
+.Projects{
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+.Projects .col{
+    text-transform: none;
+    font-weight: 3;
+    width: 80%;
+    padding: 0px;
+    margin: 5px;
+}
+.Projects .col h1{
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 2px;
+}
+.Projects .col p{
+    font-size: 16px;
+    font-weight: 200;
+    margin-bottom: 2px;
+    margin-left: 20px;
+}
+
+
+/* CONTACT */
+
+.contact{
+    width: 60%;
+    margin-left: 20%;
+    padding: 50px 0;
+    z-index: 99;
+}
+
+.contact-info{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.contact-info .textField{
+    width: 100%;
+    height: 50px;
+    border:1px solid #fff;
+    box-sizing:border-box ;
+    background-color: transparent;
+    padding: 15px 15px;
+    margin-bottom: 15px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: #fff;
+    font-size: 16px;
+
+}
+
+.contact-info .messageField{
+    height: 200px;
+
+}
+.contact-info .submitButton{
+    background-color: #fff;
+    color:rgb(0, 0, 0);
+    height: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.8s ease-in-out;
+
+}
+
+.contact-info .submitButton:hover{
+    transform: scale(1);
+    font-size: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    
+}
+/* Style all font awesome icons */
+
+footer{
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
